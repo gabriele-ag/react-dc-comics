@@ -6,7 +6,7 @@ function Main() {
 
             <section className="sectionContent font">
                 <div className="container">
-                    <h1>Content goes here</h1>
+                    <h1>-- Content goes here --</h1>
                 </div>
             </section>
 

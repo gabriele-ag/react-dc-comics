@@ -56,7 +56,7 @@ function Footer() {
             <section className="sectionFooter2 font">
                 <div className="menuFooter2 container flex">
                     <div>
-                        <a className="btn">SIGN-UP NOW!</a>
+                        <a href="" className="btn">SIGN-UP NOW!</a>
                     </div>
                     
                     <div className="flex callToAction">

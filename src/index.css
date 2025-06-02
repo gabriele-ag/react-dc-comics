@@ -65,16 +65,23 @@ header {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
-    gap: 30px;
+    gap: 30px;   
 }
 
 .menu a {
     color: var(--common-color-3);
+    padding-bottom: 65px;
+}
+
+@keyframes fadeIn {
+    from { color: var(--common-color-3) }
+    to { color: var(--common-color-1) }
 }
 
 .menu a:hover {
     color: var(--common-color-1);
-    border-bottom: 2px solid var(--common-color-1)
+    border-bottom: 3px solid var(--common-color-1);
+    animation: fadeIn 0.4s ease-in-out
 }
 
 /* MAIN */
@@ -138,8 +145,14 @@ header {
     color: var(--common-color-3);
 }
 
+@keyframes fadeIn2 {
+    from { color: var(--common-color-3) }
+    to { color: var(--common-color-2) }
+}
+
 .menuFooter li a:hover {
     color: var(--common-color-2);
+    animation: fadeIn2 0.4s ease-in-out
 }
 
 .menuFooter li h3 {
@@ -171,9 +184,11 @@ header {
     color: var(--common-color-2);
     border: 3px solid var(--common-color-1);
     font-size: 17px;
-    font-weight: bold;
-    background-color: none;
+    font-weight: bold;   
+}
 
+.btn:hover {
+    background-color: var(--common-color-1);
 }
 
 .callToAction {
