@@ -30,7 +30,11 @@ img {
 }
 
 :root {
-    --common-color-1: #0000
+    --common-color-1: #0282F9;
+    --common-color-2: #FFFF;
+    --common-color-3: #5e5e5e;
+    --common-color-4: #1C1C1C;
+
 }
 
 .font {
@@ -58,45 +62,45 @@ header {
 }
 
 .menu {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
     gap: 30px;
 }
 
 .menu a {
-    color: rgb(94, 93, 93);
+    color: var(--common-color-3);
 }
 
 .menu a:hover {
-    color: rgb(18, 95, 236);
-    border-bottom: 2px solid rgb(18, 95, 236)
+    color: var(--common-color-1);
+    border-bottom: 2px solid var(--common-color-1)
 }
 
 /* MAIN */
 /* Content */
 .sectionContent {
     padding: 40px;
-    background-color: rgb(26, 26, 26);
+    background-color: var(--common-color-4);
     z-index: 2;
 }
 
 .sectionContent h1 {
-    color: rgb(255, 255, 255);
+    color: var(--common-color-2);
 }
 
 /* Menu2 */
 
 .sectionMenu2 {
     padding: 40px 0;
-    background-color: rgb(37, 110, 247);
+    background-color: var(--common-color-1);
     position: relative;
     z-index: 2;
 }
 
 .sectionMenu2 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--common-color-2);
 }
 
 .menu2 {
@@ -116,12 +120,12 @@ header {
 }
 
 /* FOOTER */
-
+/* First section */
 .sectionFooter1 {
-    background-image: url(../public/footer-bg.jpg);
+    background-image: url(/public/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px 0;
+    padding: 75px 0;
     position: relative;
 }
 
@@ -130,12 +134,16 @@ header {
     gap: 50px;
 }
 
-.menuFooter li {
-    color: rgb(156, 156, 156);
+.menuFooter li a {
+    color: var(--common-color-3);
+}
+
+.menuFooter li a:hover {
+    color: var(--common-color-2);
 }
 
 .menuFooter li h3 {
-    color: aliceblue;
+    color: var(--common-color-2);
 }
 
 .logoBG {
@@ -144,10 +152,45 @@ header {
     right: 100px;
 }
 
+
+/* Footer section 2 */
+
 .sectionFooter2 {
     position: relative;
-    height: 200px;
-    background-color: black;
+    background-color: var(--common-color-4);
+    padding: 30px 0;
 }
+
+.menuFooter2 {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 12px 12px;
+    color: var(--common-color-2);
+    border: 3px solid var(--common-color-1);
+    font-size: 17px;
+    font-weight: bold;
+    background-color: none;
+
+}
+
+.callToAction {
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.followUs {
+    color: var(--common-color-2);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.socials {
+    gap: 15px;
+}
+
 
 
