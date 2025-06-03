@@ -108,6 +108,7 @@ header {
 .sectionMenu2 a {
     text-decoration: none;
     color: var(--common-color-2);
+    font-size: 13px;
 }
 
 .menu2 {
@@ -129,7 +130,7 @@ header {
 /* FOOTER */
 /* First section */
 .sectionFooter1 {
-    background-image: url(/public/footer-bg.jpg);
+    background-image: url(/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 75px 0;

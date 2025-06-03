@@ -1,3 +1,5 @@
+import comics from "../data/comics.js"
+
 function Main() {
     return (
         <main>
@@ -6,7 +8,15 @@ function Main() {
 
             <section className="sectionContent font">
                 <div className="container">
-                    <h1>-- Content goes here --</h1>
+                    <ul className="comics flex">
+                        {comics.map((curComic, index) => (
+                            <li key={index}>
+                                <img src={curComic.thumb} alt={curComic.type}/>
+                                <h4>{curComic.series}</h4>
+                            </li>
+                            )
+                        )}
+                    </ul>
                 </div>
             </section>
 
