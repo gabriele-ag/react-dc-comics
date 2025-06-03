@@ -1,5 +1,6 @@
 import comics from "../data/comics.js"
 
+
 function Main() {
     return (
         <main>
