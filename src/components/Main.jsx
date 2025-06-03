@@ -12,11 +12,12 @@ function Main() {
                         {comics.map((curComic, index) => (
                             <li key={index}>
                                 <img src={curComic.thumb} alt={curComic.type}/>
-                                <h4>{curComic.series}</h4>
+                                <p>{curComic.series}</p>
                             </li>
                             )
                         )}
                     </ul>
+                    <button className="btnLoad">LOAD MORE</button>
                 </div>
             </section>
 

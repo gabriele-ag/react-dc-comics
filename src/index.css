@@ -96,6 +96,31 @@ header {
     color: var(--common-color-2);
 }
 
+.comics {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.comics li {
+    width: calc((100% / 6) - 15px);
+}
+
+.comics p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--common-color-2);
+}
+
+.btnLoad {
+    font-weight: bold;
+    padding: 15px 30px;
+    background-color: var(--common-color-1);
+    color: var(--common-color-2);
+    border: 2px solid var(--common-color-1);
+}
+
 /* Menu2 */
 
 .sectionMenu2 {
