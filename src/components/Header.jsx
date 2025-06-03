@@ -14,7 +14,6 @@ const menuItem = [
 function Header() {
     return (
     <header className="flex">
-
         <img src="/dc-logo.png" alt="" />
         <nav>
             <ul className="flex font menu">
@@ -25,6 +24,7 @@ function Header() {
                 ))}
             </ul>
         </nav>
+
         
     </header>
     )

@@ -5,9 +5,12 @@ function Main() {
     return (
         <main>
 
+            <section className="divisorImg"></section>
+
             {/* Content*/}
 
             <section className="sectionContent font">
+                <span className="font titleSectionContent">CURRENT SERIES</span>
                 <div className="container">
                     <ul className="comics flex">
                         {comics.map((curComic, index) => (
@@ -17,8 +20,8 @@ function Main() {
                             </li>
                             )
                         )}
+                        <button className="btnLoad">LOAD MORE</button>
                     </ul>
-                    <button className="btnLoad">LOAD MORE</button>
                 </div>
             </section>
 
