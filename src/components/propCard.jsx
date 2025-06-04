@@ -1,6 +1,6 @@
-import styles from "./comicsstyle.modules.css"
+import styles from "./comicstyle.module.css";
 
-function cardComic ({thumb, type, series}) {
+function CardComic ({thumb, type, series}) {
     return (
     <li className={styles.comicsP}>
         <img src={thumb} alt={type} className={styles.comicsImg}/>
@@ -9,4 +9,4 @@ function cardComic ({thumb, type, series}) {
     )
 }
 
-export default cardComic
+export default CardComic

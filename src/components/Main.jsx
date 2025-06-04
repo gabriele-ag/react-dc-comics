@@ -1,5 +1,5 @@
 import comics from "../data/comics.js"
-import cardComic from "./propCard.jsx"
+import CardComic from "./propCard.jsx"
 
 
 function Main() {
@@ -15,9 +15,9 @@ function Main() {
                 <div className="container">
                     <ul className="comics flex">
 
-                        {comics.map((curComic) => (
-                            <cardComic 
-                            key = {curComic.id} 
+                        {comics.map((curComic, index) => (
+                            <CardComic 
+                            key = {`${index}`} 
                             thumb = {curComic.thumb} 
                             type = {curComic.type}
                             series = {curComic.series}/>
