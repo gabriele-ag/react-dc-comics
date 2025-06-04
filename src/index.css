@@ -121,7 +121,7 @@ header {
     gap: 25px;
 }
 
-.comics li {
+/* .comics li {
     width: calc((100% / 6) - 25px);
     margin-bottom: 30px;
 }
@@ -138,7 +138,7 @@ header {
     height: 250px;
     object-fit: cover;
     object-position: top;
-}
+} */
 
 .btnLoad {
     margin: auto;
@@ -260,6 +260,4 @@ header {
 .socials {
     gap: 15px;
 }
-
-
 

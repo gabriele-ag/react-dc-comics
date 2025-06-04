@@ -1,4 +1,5 @@
 import comics from "../data/comics.js"
+import cardComic from "./propCard.jsx"
 
 
 function Main() {
@@ -13,13 +14,15 @@ function Main() {
                 <span className="font titleSectionContent">CURRENT SERIES</span>
                 <div className="container">
                     <ul className="comics flex">
-                        {comics.map((curComic, index) => (
-                            <li key={index}>
-                                <img src={curComic.thumb} alt={curComic.type}/>
-                                <p>{curComic.series}</p>
-                            </li>
-                            )
-                        )}
+
+                        {comics.map((curComic) => (
+                            <cardComic 
+                            key = {curComic.id} 
+                            thumb = {curComic.thumb} 
+                            type = {curComic.type}
+                            series = {curComic.series}/>
+                            ))}
+
                         <button className="btnLoad">LOAD MORE</button>
                     </ul>
                 </div>
