@@ -1,3 +1,6 @@
+import styles from "./header.module.css"
+
+
 const menuItem = [
     { sectionTitle: 'Characters', href: "" },
     { sectionTitle: 'Comics', href: "" },
@@ -11,12 +14,13 @@ const menuItem = [
     { sectionTitle: 'Shop', href: "" },
 ];
 
+
 function Header() {
     return (
-    <header className="flex">
-        <img src="/dc-logo.png" alt="" />
+    <header className={`flex + ${styles.header}`}>
+        <img src="/dc-logo.png" alt="logosite-dc" />
         <nav>
-            <ul className="flex font menu">
+            <ul className={`flex + font + ${styles.menu}`}>
                 {menuItem.map((curItem, index) => (
                     <li key={index}>
                         <a href={curItem.href}>{curItem.sectionTitle}</a>

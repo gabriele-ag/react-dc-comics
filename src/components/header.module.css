@@ -1,0 +1,30 @@
+.header {
+    padding: 20px 20px;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    gap: 30px;   
+}
+
+.menu a {
+    color: var(--common-color-3);
+    padding-bottom: 65px;
+}
+
+@keyframes fadeIn {
+    from { color: var(--common-color-3) }
+    to { color: var(--common-color-1) }
+}
+
+.menu a:hover {
+    color: var(--common-color-1);
+    border-bottom: 3px solid var(--common-color-1);
+    animation: fadeIn 0.4s ease-in-out
+}
