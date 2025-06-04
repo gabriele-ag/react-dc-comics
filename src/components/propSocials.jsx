@@ -1,5 +1,6 @@
 function Socials ({thumb, link, alt}) {
-    return (<li>
+    return (
+    <li>
         <a href={link}>
         <img src={thumb} alt={alt} /></a>
     </li>

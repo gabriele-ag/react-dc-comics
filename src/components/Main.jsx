@@ -45,7 +45,7 @@ function Main() {
                         thumb = {curCta.img}
                         alt = {curCta.alt}
                         title = {curCta.title}
-                        href = {curCta.link}
+                        link = {curCta.link}
                         />
                     ))}
 
