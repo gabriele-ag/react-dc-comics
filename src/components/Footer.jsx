@@ -1,3 +1,6 @@
+import social from "../data/socials.js"
+import Socials from "./propSocials.jsx"
+
 function Footer() {
     return (
         <footer>
@@ -64,11 +67,15 @@ function Footer() {
                         <span className="followUs">FOLLOW US</span>
 
                         <ul className="flex socials">
-                            <li><a href=""><img src="/footer-facebook.png" alt="" /></a></li>
-                            <li><a href=""><img src="/footer-twitter.png" alt="" /></a></li>
-                            <li><a href=""><img src="/footer-youtube.png" alt="" /></a></li>
-                            <li><a href=""><img src="/footer-pinterest.png" alt="" /></a></li>
-                            <li><a href=""><img src="/footer-periscope.png" alt="" /></a></li>
+
+                            {social.map((curSocial, index) => (
+                                <Socials
+                                key= {`${index}`}
+                                thumb = {curSocial.img}
+                                alt = {curSocial.alt}
+                                link = {curSocial.link} />
+                            ))}
+
                         </ul>
                     </div>
                     
