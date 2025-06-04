@@ -1,18 +1,5 @@
 import styles from "./header.module.css"
-
-
-const menuItem = [
-    { sectionTitle: 'Characters', href: "" },
-    { sectionTitle: 'Comics', href: "" },
-    { sectionTitle: 'Movies', href: "" },
-    { sectionTitle: 'Tv', href: "" },
-    { sectionTitle: 'Games', href: "" },
-    { sectionTitle: 'Collectibles', href: "" },
-    { sectionTitle: 'Videos', href: "" },
-    { sectionTitle: 'Fans', href: "" },
-    { sectionTitle: 'News', href: "" },
-    { sectionTitle: 'Shop', href: "" },
-];
+import menuItem from "../data/menuItem"
 
 
 function Header() {

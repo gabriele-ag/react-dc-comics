@@ -1,12 +1,17 @@
+// Comics data & prop
 import comics from "../data/comics.js"
 import CardComic from "./propCard.jsx"
+
+// cta data & prop
+import CtaSite from "./propCTA.jsx"
+import cta from "../data/CTAsite.js"
 
 
 function Main() {
     return (
         <main>
 
-            <section className="divisorImg"></section>
+            <section className="dividerImg"></section>
 
             {/* Content*/}
 
@@ -33,27 +38,17 @@ function Main() {
             {/* Menu-2 */}
             <section className="sectionMenu2 font">
                 <div className="menu2 container flex">
-                    <div className="fontMenu flex">
-                        <img src="/buy-comics-digital-comics.png" alt="" />
-                        <a href="">DIGITAL COMICS</a>
-                    </div>
-                    <div className="fontMenu flex">
-                        <img src="/buy-comics-merchandise.png" alt="" />
-                        <a href="">DC MERCHANDISE</a>
-                    </div>
-                    <div className="fontMenu flex">
-                        <img src="/buy-comics-subscriptions.png" alt="" />
-                        <a href="">SUBSCRIPTION</a>
-                    </div>
-                    <div className="fontMenu flex">
-                        <img src="/buy-comics-shop-locator.png" alt="" />
-                        <a href="">COMIC SHOP LOCATOR</a>
-                    </div>
-                    <div className="fontMenu flex">
-                        <img src="/buy-dc-power-visa.svg" alt="" />
-                        <a href="">DC POWER VISA</a>
-                    </div>
                     
+                    {cta.map((curCta, index) => (
+                        <CtaSite
+                        key = {`${index}`}
+                        thumb = {curCta.img}
+                        alt = {curCta.alt}
+                        title = {curCta.title}
+                        href = {curCta.link}
+                        />
+                    ))}
+
                 </div>
             </section>
             {/* /Menu-2 */}

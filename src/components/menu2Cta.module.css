@@ -1,0 +1,10 @@
+.menu2Card {
+    align-items: center;
+    gap: 10px;
+}
+
+.menu2Img {
+    width: 3em;
+    height: 3em;
+    object-fit: contain;
+}
