@@ -21,11 +21,13 @@ function Main() {
                     <ul className="comics flex">
 
                         {comics.map((curComic, index) => (
+
                             <CardComic 
                             key = {`${index}`} 
                             thumb = {curComic.thumb} 
                             type = {curComic.type}
                             series = {curComic.series}/>
+                            
                             ))}
 
                         <button className="btnLoad">LOAD MORE</button>
